@@ -7,7 +7,11 @@ script/generate scaffold Sensor name:string address:string sensor_type_id:intege
 
 script/generate scaffold SensorType name:string data_type:string
 
+script/generate scaffold LocationReading name:string latitude:float longitude:float altitude:float speed:float direction:float sensor_id:integer
+
 script/generate scaffold NumericReading name:string value:float sensor_id:integer
+
+script/generate scaffold StringReading name:string value:string sensor_id:integer
 
 
 == Welcome to Rails
