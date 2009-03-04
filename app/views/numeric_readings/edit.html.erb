@@ -1,0 +1,24 @@
+<h1>Editing numeric_reading</h1>
+
+<% form_for(@numeric_reading) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :sensor_id %><br />
+    <%= f.text_field :sensor_id %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @numeric_reading %> |
+<%= link_to 'Back', numeric_readings_path %>

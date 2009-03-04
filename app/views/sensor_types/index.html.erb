@@ -1,0 +1,22 @@
+<h1>Listing sensor_types</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Data type</th>
+  </tr>
+
+<% for sensor_type in @sensor_types %>
+  <tr>
+    <td><%=h sensor_type.name %></td>
+    <td><%=h sensor_type.data_type %></td>
+    <td><%= link_to 'Show', sensor_type %></td>
+    <td><%= link_to 'Edit', edit_sensor_type_path(sensor_type) %></td>
+    <td><%= link_to 'Destroy', sensor_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New sensor_type', new_sensor_type_path %>

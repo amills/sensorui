@@ -1,0 +1,15 @@
+analog:
+  name: Analog
+  data_type: float
+  
+digital:
+  name: Digital
+  data_type: bit
+  
+location:
+  name: Location
+  data_type: geopoint
+  
+string:
+  name: String
+  data_type: string

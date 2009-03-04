@@ -1,0 +1,43 @@
+<p>
+  <b>Name:</b>
+  <%=h @device.name %>
+</p>
+
+<p>
+  <b>Imei:</b>
+  <%=h @device.imei %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%=h @device.phone_number %>
+</p>
+
+<p>
+  <b>Provision status:</b>
+  <%=h @device.provision_status_id %>
+</p>
+
+<p>
+  <b>Last online time:</b>
+  <%=h @device.last_online_time %>
+</p>
+
+<p>
+  <b>Online threshold:</b>
+  <%=h @device.online_threshold %>
+</p>
+
+<p>
+  <b>Device profile:</b>
+  <%=h @device.device_profile_id %>
+</p>
+
+<p>
+  <b>Gateway name:</b>
+  <%=h @device.gateway_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_device_path(@device) %> |
+<%= link_to 'Back', devices_path %>

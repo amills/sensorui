@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @numeric_reading.name %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%=h @numeric_reading.value %>
+</p>
+
+<p>
+  <b>Sensor:</b>
+  <%=h @numeric_reading.sensor_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_numeric_reading_path(@numeric_reading) %> |
+<%= link_to 'Back', numeric_readings_path %>

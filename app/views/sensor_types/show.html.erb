@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @sensor_type.name %>
+</p>
+
+<p>
+  <b>Data type:</b>
+  <%=h @sensor_type.data_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_sensor_type_path(@sensor_type) %> |
+<%= link_to 'Back', sensor_types_path %>

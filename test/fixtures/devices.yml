@@ -1,0 +1,23 @@
+d1:
+  name: Vehicle 1
+  device_profile: vehicles
+  
+d2:
+  name: Vehicle 2
+  device_profile: vehicles
+
+d3:
+  name: Generator 1
+  device_profile: generators
+  
+d4:
+  name: Generator 2
+  device_profile: generators
+  
+d5:
+  name: Pump 1
+  device_profile: pumps
+  
+d6:
+  name: Pump 2
+  device_profile: pumps

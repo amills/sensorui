@@ -1,0 +1,6 @@
+development:
+  adapter: mysql
+  database: sensorui_development
+  username: root
+  password: 
+  socket: /tmp/mysql.sock

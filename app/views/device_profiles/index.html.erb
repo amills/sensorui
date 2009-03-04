@@ -1,0 +1,24 @@
+<h1>Listing device_profiles</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Mobile asset</th>
+    <th>Description</th>
+  </tr>
+
+<% for device_profile in @device_profiles %>
+  <tr>
+    <td><%=h device_profile.name %></td>
+    <td><%=h device_profile.mobile_asset %></td>
+    <td><%=h device_profile.description %></td>
+    <td><%= link_to 'Show', device_profile %></td>
+    <td><%= link_to 'Edit', edit_device_profile_path(device_profile) %></td>
+    <td><%= link_to 'Destroy', device_profile, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New device_profile', new_device_profile_path %>

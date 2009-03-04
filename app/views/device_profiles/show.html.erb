@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @device_profile.name %>
+</p>
+
+<p>
+  <b>Mobile asset:</b>
+  <%=h @device_profile.mobile_asset %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @device_profile.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_device_profile_path(@device_profile) %> |
+<%= link_to 'Back', device_profiles_path %>

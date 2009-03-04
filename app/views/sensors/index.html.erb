@@ -1,0 +1,26 @@
+<h1>Listing sensors</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Sensor type</th>
+    <th>Device</th>
+  </tr>
+
+<% for sensor in @sensors %>
+  <tr>
+    <td><%=h sensor.name %></td>
+    <td><%=h sensor.address %></td>
+    <td><%=h sensor.sensor_type_id %></td>
+    <td><%=h sensor.device_id %></td>
+    <td><%= link_to 'Show', sensor %></td>
+    <td><%= link_to 'Edit', edit_sensor_path(sensor) %></td>
+    <td><%= link_to 'Destroy', sensor, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New sensor', new_sensor_path %>

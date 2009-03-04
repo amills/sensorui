@@ -1,0 +1,44 @@
+<h1>Editing device</h1>
+
+<% form_for(@device) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :imei %><br />
+    <%= f.text_field :imei %>
+  </p>
+  <p>
+    <%= f.label :phone_number %><br />
+    <%= f.text_field :phone_number %>
+  </p>
+  <p>
+    <%= f.label :provision_status_id %><br />
+    <%= f.text_field :provision_status_id %>
+  </p>
+  <p>
+    <%= f.label :last_online_time %><br />
+    <%= f.datetime_select :last_online_time %>
+  </p>
+  <p>
+    <%= f.label :online_threshold %><br />
+    <%= f.text_field :online_threshold %>
+  </p>
+  <p>
+    <%= f.label :device_profile_id %><br />
+    <%= f.text_field :device_profile_id %>
+  </p>
+  <p>
+    <%= f.label :gateway_name %><br />
+    <%= f.text_field :gateway_name %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @device %> |
+<%= link_to 'Back', devices_path %>

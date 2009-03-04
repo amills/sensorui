@@ -1,0 +1,8 @@
+s1:
+  name: temperature
+  
+s2: 
+  name: analog
+
+s3:
+  name: location

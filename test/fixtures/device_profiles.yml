@@ -1,0 +1,12 @@
+vehicles:
+  name: Vehicles
+  description: Description of profile goes here
+  mobile_asset: true
+  
+generators:
+  name: Generators
+  description: Description of profile goes here
+  
+pumps:
+  name: Pumps
+  description: Description of profile goes here
