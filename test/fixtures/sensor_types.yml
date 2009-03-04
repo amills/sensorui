@@ -1,11 +1,7 @@
-analog:
-  name: Analog
+number:
+  name: Numeric
   data_type: float
-  
-digital:
-  name: Digital
-  data_type: bit
-  
+
 location:
   name: Location
   data_type: geopoint

@@ -1,0 +1,32 @@
+<h1>Listing location_readings</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th>Altitude</th>
+    <th>Speed</th>
+    <th>Direction</th>
+    <th>Sensor</th>
+  </tr>
+
+<% for location_reading in @location_readings %>
+  <tr>
+    <td><%=h location_reading.name %></td>
+    <td><%=h location_reading.latitude %></td>
+    <td><%=h location_reading.longitude %></td>
+    <td><%=h location_reading.altitude %></td>
+    <td><%=h location_reading.speed %></td>
+    <td><%=h location_reading.direction %></td>
+    <td><%=h location_reading.sensor_id %></td>
+    <td><%= link_to 'Show', location_reading %></td>
+    <td><%= link_to 'Edit', edit_location_reading_path(location_reading) %></td>
+    <td><%= link_to 'Destroy', location_reading, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New location_reading', new_location_reading_path %>

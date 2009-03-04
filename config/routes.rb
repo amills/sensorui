@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :string_readings
+
+  map.resources :location_readings
+
   map.resources :numeric_readings
 
   map.resources :sensor_types
@@ -8,10 +12,6 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :devices
 
   map.resources :devices
-
-  map.resources :device_profiles
-
-  map.resources :device_profiles
 
   map.resources :device_profiles
 
@@ -47,7 +47,7 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  # map.root :controller => "welcome"
+  map.root :controller => "home"
 
   # See how all your routes lay out with "rake routes"
 

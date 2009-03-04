@@ -1,0 +1,24 @@
+<h1>Editing string_reading</h1>
+
+<% form_for(@string_reading) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :value %><br />
+    <%= f.text_field :value %>
+  </p>
+  <p>
+    <%= f.label :sensor_id %><br />
+    <%= f.text_field :sensor_id %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @string_reading %> |
+<%= link_to 'Back', string_readings_path %>

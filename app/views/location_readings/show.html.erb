@@ -1,0 +1,38 @@
+<p>
+  <b>Name:</b>
+  <%=h @location_reading.name %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%=h @location_reading.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%=h @location_reading.longitude %>
+</p>
+
+<p>
+  <b>Altitude:</b>
+  <%=h @location_reading.altitude %>
+</p>
+
+<p>
+  <b>Speed:</b>
+  <%=h @location_reading.speed %>
+</p>
+
+<p>
+  <b>Direction:</b>
+  <%=h @location_reading.direction %>
+</p>
+
+<p>
+  <b>Sensor:</b>
+  <%=h @location_reading.sensor_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_location_reading_path(@location_reading) %> |
+<%= link_to 'Back', location_readings_path %>

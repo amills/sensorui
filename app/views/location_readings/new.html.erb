@@ -1,0 +1,39 @@
+<h1>New location_reading</h1>
+
+<% form_for(@location_reading) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude %>
+  </p>
+  <p>
+    <%= f.label :longitude %><br />
+    <%= f.text_field :longitude %>
+  </p>
+  <p>
+    <%= f.label :altitude %><br />
+    <%= f.text_field :altitude %>
+  </p>
+  <p>
+    <%= f.label :speed %><br />
+    <%= f.text_field :speed %>
+  </p>
+  <p>
+    <%= f.label :direction %><br />
+    <%= f.text_field :direction %>
+  </p>
+  <p>
+    <%= f.label :sensor_id %><br />
+    <%= f.text_field :sensor_id %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', location_readings_path %>

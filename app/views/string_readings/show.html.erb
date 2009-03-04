@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @string_reading.name %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%=h @string_reading.value %>
+</p>
+
+<p>
+  <b>Sensor:</b>
+  <%=h @string_reading.sensor_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_string_reading_path(@string_reading) %> |
+<%= link_to 'Back', string_readings_path %>

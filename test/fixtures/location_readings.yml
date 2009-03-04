@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  latitude: 1.5
+  longitude: 1.5
+  altitude: 1.5
+  speed: 1.5
+  direction: 1.5
+  sensor_id: 1
+
+two:
+  name: MyString
+  latitude: 1.5
+  longitude: 1.5
+  altitude: 1.5
+  speed: 1.5
+  direction: 1.5
+  sensor_id: 1

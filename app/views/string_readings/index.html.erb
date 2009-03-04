@@ -1,0 +1,24 @@
+<h1>Listing string_readings</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Value</th>
+    <th>Sensor</th>
+  </tr>
+
+<% for string_reading in @string_readings %>
+  <tr>
+    <td><%=h string_reading.name %></td>
+    <td><%=h string_reading.value %></td>
+    <td><%=h string_reading.sensor_id %></td>
+    <td><%= link_to 'Show', string_reading %></td>
+    <td><%= link_to 'Edit', edit_string_reading_path(string_reading) %></td>
+    <td><%= link_to 'Destroy', string_reading, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New string_reading', new_string_reading_path %>
